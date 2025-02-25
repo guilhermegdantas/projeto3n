@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 22vh;
+    border-bottom: 3px solid #38b6ff;
+}
+
+.nav-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+}
+
+.nav-container a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 30px;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+.nav-container img{
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    margin-top: 7%;
+    position: absolute;
+    left: 15%;
+}
+
+.home:hover{
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.nss-lojas:hover{       
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.cmp-promo:hover{       
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.parceiros:hover{       
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.workWithUs:hover{    
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.contato:hover{    
+    color: #38b6ff;
+    transition: 0.5s;
+}
+
+.novidades{
+    width: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 10%;
+}
+
+.svg-logo{
+    filter: opacity(20%);
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+}
+
+.storeAndBakery{
+    display: flex;
+    padding-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.fim-pag{
+    display: flex;
+    align-items: center;
+}
+
+#propriedadeSite{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
