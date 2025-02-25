@@ -76,7 +76,13 @@ header{
     transition: 0.5s;
 }
 
-.contato:hover{    
+.fa-instagram{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{    
     color: #38b6ff;
     transition: 0.5s;
 }
