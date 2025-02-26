@@ -9,9 +9,10 @@ html, body{
     width: 100%;
 }
 
+/*
 body::-webkit-scrollbar{
     display: none;
-}
+}*/
 
 header{
     width: 100%;
@@ -91,7 +92,6 @@ header{
     width: 40%;
     display: flex;
     text-align: center;
-    flex-direction: row;
     gap: 50px;
     margin-left: 10%;
 }
@@ -116,8 +116,46 @@ header{
     align-items: center;
 }
 
-#propriedadeSite{
+footer{
+    height: 30%;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    padding-top: 10%;
+    flex-direction: column;
+    justify-content: end;
 }
+
+#propriedadeSite{
+    bottom: 0;
+    padding: 5px;
+    text-align: center;
+}
+/* Não ficou responsivo, no celular algumas coisas ficaram super fora do lugar
+
+Pesquisar como fazer sites responsivos COM EXTREMA URGENCIA;*/
+
+@media screen and (max-width: 1070px){/*Aqui criamos um media screen, ou chamado tambem de media query*/
+    .nav-menu{/*com essa linha, estamos falando que quando a tela atingir 1070px, a class vai desaparecer*/
+        display: none;
+    }
+
+    .novidades{
+        width: 90%;
+        flex-direction: column;
+        padding-right: 10%;
+    }
+
+    .nav-container img{
+        margin-top: 90px;
+        position: none;
+        padding-top: ;
+    }
+
+    .storeAndBakery{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .propriedadeSite{
+        justify-content: end;
+    }
+} 
